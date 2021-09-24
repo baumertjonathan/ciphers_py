@@ -1,4 +1,4 @@
-def encrypt(text, key):
+def encrypt(text: str, key: int):
     result = ""
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     text = text.lower()
@@ -10,7 +10,7 @@ def encrypt(text, key):
         result += alphabet[index+key if index+key < 26 else index+key-26]
     return result
 
-def decrypt(text, key):
+def decrypt(text: str, key: int):
     result=""
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     text = text.lower()
